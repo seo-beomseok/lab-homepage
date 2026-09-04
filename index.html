@@ -253,33 +253,7 @@ title: ""
   <div>Department of Statistics · Sookmyung Women's University</div>
 </footer>
 
-<!-- <script>
-document.querySelectorAll('.news-carousel').forEach(function(carousel) {
-  const slides = carousel.querySelectorAll('.news-slide');
-  const prev = carousel.querySelector('.carousel-prev');
-  const next = carousel.querySelector('.carousel-next');
-  const counter = carousel.querySelector('.current-slide');
 
-  if (slides.length <= 1) return;
-
-  let index = 0;
-
-  function showSlide(newIndex) {
-    slides[index].classList.remove('active');
-    index = (newIndex + slides.length) % slides.length;
-    slides[index].classList.add('active');
-    if (counter) counter.textContent = index + 1;
-  }
-
-  prev.addEventListener('click', function() {
-    showSlide(index - 1);
-  });
-
-  next.addEventListener('click', function() {
-    showSlide(index + 1);
-  });
-});
-</script> -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.news-carousel').forEach(function (carousel) {
