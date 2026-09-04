@@ -1,0 +1,233 @@
+---
+layout: default
+title: ""
+---
+
+<section class="hero-section lab-home-hero" id="home">
+  <div class="lab-home-copy">
+    <div class="eyebrow"><span></span> Department of Statistics · Sookmyung Women's University</div>
+    <h1>Explainable Neural<br><em>Computing Lab</em></h1>
+    <p class="hero-lead">Our lab focuses on explainable neural computing and statistical learning, with applications to forecasting and modeling complex economic, financial, time-series, and narrative text data.</p>
+    <div class="hero-links">
+      <a class="pill primary" href="#research">Research</a>
+      <a class="pill" href="#people">People</a>
+      <a class="pill" href="#publications">Publications</a>
+    </div>
+  </div>
+  <!-- <div class="lab-focus-panel" aria-label="Lab research areas">
+    <div><span>01</span><strong>Explainable Neural Computing</strong></div>
+    <div><span>02</span><strong>Time-series Forecasting</strong></div>
+    <div><span>03</span><strong>Text & Narrative Data</strong></div>
+    <div><span>04</span><strong>Economic & Financial Analytics</strong></div>
+  </div> -->
+</section>
+
+<section class="section notification-section" id="news" aria-label="Lab notification">
+  <div class="section-label">Notification · 모집</div>
+  <div class="section-body about-grid">
+    <div class="lab-hero">
+      <div>
+        <p class="large">
+          연구실에 함께할 석사과정생 및 학부연구생을 모집합니다. 인공신경망과 시계열 분석에 대한 이해와 프로그래밍 역량을 갖춘 지원자를 우대합니다. 실무 데이터 분석과 연구 수행에 관심이 있거나, 향후 석사과정 진학을 희망하는 지원자를 환영합니다.
+        </p>
+      </div>
+      <div class="lab-themes">
+        <span>Explainable neural computing</span><span>Time-series forecasting</span><span>Text & narratives</span><span>Econometrics</span><span>Financial analytics</span>
+      </div>
+    </div>    
+  </div>
+</section>
+
+<section class="section research-section" id="research">
+  <div class="section-label">Research</div>
+  <div class="section-heading">
+    <!-- <h2>Interpretable models for complex economic, financial, and narrative data.</h2> -->
+  </div>
+  <div class="research-grid">
+    <article><span class="research-no">01</span><i class="fa fa-lightbulb-o"></i><h3>Explainable Neural Networks</h3><p>Intrinsically interpretable architectures, local linear representations, clustering, and explicit decision rules.</p></article>
+    <article><span class="research-no">02</span><i class="fa fa-line-chart"></i><h3>Forecasting & Nowcasting</h3><p>Macroeconomic and financial forecasting, forecast combinations, uncertainty, and time-series foundation models.</p></article>
+    <article><span class="research-no">03</span><i class="fa fa-comments-o"></i><h3>Text & Narrative Data</h3><p>News, analyst reports, policy narratives, sentiment, and text-based economic indicators.</p></article>
+    <article><span class="research-no">04</span><i class="fa fa-university"></i><h3>Economic Policy Analytics</h3><p>Housing-credit cycles, monetary-policy narratives, household finance, and data-driven policy measurement.</p></article>
+  </div>
+</section>
+
+<section class="section lab-section" id="people">
+  <div class="section-label">People</div>
+  <div class="member-grid">
+    <article class="member-card pi-card">
+      <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Beomseok Seo">
+      <div><span>Principal Investigator</span><h4>Beomseok Seo</h4><p>Assistant Professor of Statistics</p>
+        <div class="pi-links">
+          <a href="mailto:bsseo@sm.ac.kr">Email</a>
+        </div>
+      </div>
+    </article>
+    {% for student in site.data.students %}
+    <article class="member-card">
+      {% if student.image %}<img src="{{ student.image | relative_url }}" alt="{{ student.name }}">{% else %}<div class="member-placeholder"><i class="fa fa-user"></i></div>{% endif %}
+      <div><span>{{ student.program }}</span><h4>{% if student.url %}<a href="{{ student.url }}" target="_blank" rel="noopener">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}</h4><p>{{ student.period }}</p><small>{{ student.interests }}</small></div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="section-label">PI Experience</div>
+  <div class="timeline">
+    <div class="timeline-item active"><span>2024–현재</span><div><h3>숙명여자대학교 조교수</h3><p>Assistant Professor, Sookmyung Women's University of Statistics</p></div></div>
+    <div class="timeline-item"><span>2023–현재</span><div><h3>성균관대학교 퀀트응용경제학과 초빙교수</h3><p>Adjunct Professor, Sungkyunkwan University of Quantitative Applied Economics</p></div></div>
+    <div class="timeline-item"><span>2011–2024</span><div><h3>한국은행 시니어 이코노미스트</h3><p>Senior Economist, Bank of Korea (BOK) · 조사국, 경제모형실, 경제통계국, 금융시장국</p></div></div>
+    <div class="timeline-item"><span>2026–2028</span><div><h3>국가데이터처, 경제통계분과 국가통계위원</h3><p>Committeer of the National Statistics, Ministry of Data and Statistics</p></div></div>
+    <div class="timeline-item"><span>2025</span><div><h3>한국은행 경제모형실 자문위원</h3><p>Committeer of the Office of Economic Modeling and Policy Analysis, Bank of Korea (BOK)</p></div></div>
+    <div class="timeline-item"><span>2024</span><div><h3>한국개발연구원 실시간경제진단 자문위원</h3><p>Committeer of the Real-Time Economic Diagnosis, Korea Development Institute (KDI)</p></div></div>
+    <div class="timeline-item"><span>2024</span><div><h3>소상공인진흥공단 소상공인체감경기지수 자문위원</h3><p>Committeer of the Small Business Market Business Survey Index(BSI), Small Enterprise & Market Service (SEMAS)</p></div></div>
+    <div class="timeline-item"><span>2021-현재</span><div><h3>채용출제·면접위원</h3><p>부동산원(2026), 한국증권금융(2024), 한국은행(2021)</p><p>Committeer of the Recruitment, Korea Real Estate Board (REB), Korea Securities Finance Corp. (KSFC), Bank of Korea (BOK)</p></div></div>
+    <!-- <div class="timeline-item"><span>2021</span><div><h3>한국은행 채용출제위원</h3><p>Committeer of the Recruitment Exam, Bank of Korea (BOK)</p></div></div> -->
+  </div>
+</section>
+
+<section class="section project-section" id="projects">
+  <div class="section-label">Selected projects & Patents</div>
+  <div class="project-list">
+    <article><span>2026-2031</span><div><h3>금융데이터를 활용한 시계열 예측 신경망의 통계적 해석가능성 구조 개발 및 응용</h3><p class="project-en">Statistically Interpretable Framework for Time-series Forecasting Networks Using Financial Data</p><small class="project-org">National Research Fund of Korea (NRF)</small></div></article>
+    <article><span>2026</span><div><h3>LLM 기반 시계열 파운데이션 모델을 이용한 Nowcasting 연구</h3><p class="project-en">Nowcasting Using Time-series Foundational Models Based on LLM Architecture</p><small class="project-org">Bank of Korea (BOK)</small></div></article>
+    <article><span>2026</span><div><h3>AI를 활용한 전술적 자산배분(TAA) 전략 연구</h3><p class="project-en">Study on Tactical Asset Allocation Strategies Using AI</p><small class="project-org">Mirae Asset Global Investments</small></div></article>
+    <article><span>2026</span><div><h3>중저신용자 대출 현황에 관한 분석</h3><p class="project-en">Analysis of Loans for Low-to-Medium Credit Borrowers</p><small class="project-org">Toss</small></div></article>
+    <article><span>2025</span><div><h3>정책변화와 시장심리를 고려한 가계대출 및 주택시장 예측</h3><p class="project-en">Forecasting Household Debt and the Housing Market with Policy Changes and Market Sentiment</p><small class="project-org">Bank of Korea (BOK)</small></div></article>
+    <article><span>2025</span><div><h3>회계분식위험 선정기준에 대한 연구</h3><p class="project-en">Study on the Criteria for Detecting Accounting Fraud Risk</p><small class="project-org">Korean Institute of Certified Public Accountants (KICPA)</small></div></article>
+    <article><span>2025</span><div><h3>AI 기반 공간 맞춤형 미술작품 추천 및 설치 연계형 오픈 아트 플랫폼 개발</h3><p class="project-en">Development of an AI-Based Open Art Platform for Space-Customized Artwork Recommendation and Installation Integration</p></div></article>
+    <article><span>2025</span><div><h3>빅데이터를 이용한 환율 변동성 예측</h3><p class="project-en">Forecasting Exchange Rate Volatility Using Big Data</p><small class="project-org">National Assembly Budget Office (NABO)</small></div></article>
+    <article><span>2024</span><div><h3>뱅크런 징후의 조기 포착을 위한 경보체계 구축</h3><p class="project-en">Early Warning System Construction for Detecting a Bank Run</p><small class="project-org">Korean Deposit Insurance Corporation (KDIC)</small></div></article>
+    <article><span>2022</span><div><h3>비정형 금융경제 데이터의 정량화에 대한 연구</h3><p class="project-en">Using Noise Filtering and Sufficient Dimension Reduction Method on Unstructured Economic Data</p><small class="project-org">Bank of Korea (BOK)</small></div></article>
+    <article><span>2021</span><div><h3>빅데이터를 이용한 실시간 민간소비 추정</h3><p class="project-en">Real-Time Private Consumption Prediction Using Big Data</p><small class="project-org">Bank of Korea (BOK)</small></div></article>
+  </div>
+
+  <div class="patent-strip">
+    <div><span>Patent 01</span><strong>[특허] 뉴스 텍스트 기반 경제지표 작성장치, 텍스트 지표를 이용한 경기 예측 방법 및 시스템</strong><small>[(Published Pattent) News Text-based Economic Indicator Calculation Device, Economy Prediction Method and System Using Text Indicators]</small><a href="https://doi.org/10.8080/1020220059258" target="_blank" rel="noopener">10-2022-0059258</a></div>
+    <div><span>Patent 02</span><strong>[특허] 동기화된 설명 강화 신경망의 학습 및 추론 방법 및 장치</strong><small>[(Published Pattent) Learning and Inference Method and Device of Synced Explanation-Enhanced Neural Network] · 10-2025-0121763</small></div>
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="section-label">Publications</div>
+  <div class="section-heading">
+    <!-- <h2>Selected research</h2> -->
+    <p>* Corresponding author.</p>
+  </div>
+
+  <div class="pub-group">
+    <h3>International Journals · SCIE / SSCI</h3>
+    <article class="publication"><span>2026</span><div><h4><a href="https://doi.org/10.1002/for.70161" target="_blank" rel="noopener">Point and Risk estImation using an enSemble of Models for Nowcasting: PRISM-Now</a></h4><p><strong>Seo, B.</strong>*, Cho, H. & Lee, D. · <em>Journal of Forecasting</em>, 45(6), 2760–2784.</p><small>SSCI · Q1 Economics</small></div></article>
+    <article class="publication"><span>2026</span><div><h4><a href="https://doi.org/10.1016/j.techsoc.2025.103139" target="_blank" rel="noopener">Using Explainable Artificial Intelligence to Envision the Future of Work and the Workforce – From Prediction to Explanation</a></h4><p>Chang, Y-L. & <strong>Seo, B.</strong>* · <em>Technology in Society</em>, 84.</p><small>SSCI · Top 0.5% Social Science</small></div></article>
+    <article class="publication"><span>2025</span><div><h4><a href="https://doi.org/10.1016/j.frl.2025.108616" target="_blank" rel="noopener">Who Pays When Zombie Firms Persist? Asymmetric Debt Conditions by Credit Rating</a></h4><p>Yoo, J., <strong>Seo, B.</strong>* & An, J. · <em>Finance Research Letters</em>, 108616.</p><small>SSCI · Top 4.8% Finance</small></div></article>
+    <article class="publication"><span>2025</span><div><h4><a href="https://doi.org/10.1080/1540496X.2025.2520886" target="_blank" rel="noopener">Deposit Competition and Depository Institution Risk: Do Interest Margins Matter?</a></h4><p>Yoo, J. & <strong>Seo, B.</strong>* · <em>Emerging Markets Finance and Trade</em>, 1–21.</p><small>SSCI · Q1 Economics</small></div></article>
+    <article class="publication"><span>2025</span><div><h4><a href="https://doi.org/10.1016/j.ijforecast.2024.11.001" target="_blank" rel="noopener">Econometric Forecasting Using Ubiquitous News Text: Text-enhanced Factor Model</a></h4><p><strong>Seo, B.</strong>* · <em>International Journal of Forecasting</em>, 41(3), 1055–1072.</p><small>SSCI · Top 3.1% Economics</small></div></article>
+    <article class="publication"><span>2024</span><div><h4><a href="https://www.nature.com/articles/s41598-024-77507-2" target="_blank" rel="noopener">Explainable machine learning by SEE-Net: closing the gap between interpretable models and DNNs</a></h4><p><strong>Seo, B.</strong>* & Li, J. · <em>Scientific Reports</em>, 14, 26302.</p><small>SCIE · Q1 Multidisciplinary</small></div></article>
+    <article class="publication"><span>2024</span><div><h4><a href="https://www.kereview.or.kr/ker/41/repecWrkp/676/view?mno=&pageIndex=1&vol=40&no=1&crt=2024&wrkpSn=676&searchCondition=1&searchKeyword=" target="_blank" rel="noopener">Measuring News Sentiment of Korea Using Transformer</a></h4><p><strong>Seo, B.</strong>*, Lee, Y. & Cho, H. · <em>Korean Economic Review</em>, 40(1), 149–176.</p><small>SSCI · Economics</small></div></article>
+    <article class="publication"><span>2022</span><div><h4><a href="https://doi.org/10.1080/10618600.2022.2107533" target="_blank" rel="noopener">Mixture of Linear Models Co-supervised by Deep Neural Networks</a></h4><p><strong>Seo, B.</strong>*, Lin, L. & Li, J. · <em>Journal of Computational and Graphical Statistics</em>, 31(4), 1303–1317.</p><small>SCIE · Q1 Statistics</small><a href="https://arxiv.org/abs/2108.04035" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/seo-beomseok/MLM" target="_blank" rel="noopener">Code</a></div></article>
+    <article class="publication"><span>2021</span><div><h4><a href="https://www.tandfonline.com/doi/abs/10.1080/10618600.2021.1982724?journalCode=ucgs20" target="_blank" rel="noopener">Block-wise Variable Selection for Clustering via Latent States of Mixture Models</a></h4><p><strong>Seo, B.</strong>*, Lin, L. & Li, J. · <em>Journal of Computational and Graphical Statistics</em>, 31(1), 138–150.</p><small>SCIE · Q1 Statistics</small><a href="https://github.com/seo-beomseok/HDclustVS" target="_blank" rel="noopener">Code</a></div></article>
+    <article class="publication"><span>2019</span><div><h4><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/sam.11418" target="_blank" rel="noopener">Optimal transport, mean partition, and uncertainty assessment in cluster analysis</a></h4><p>Li, J., <strong>Seo, B.</strong> & Lin, L. · <em>Statistical Analysis and Data Mining: The ASA Data Science Journal</em>, 12(5), 359–377.</p><small>SCIE · Q1 Statistics</small><a href="https://cran.r-project.org/web/packages/OTclust/index.html" target="_blank" rel="noopener">Code</a></div></article>
+  </div>
+
+  <div class="pub-group">
+    <h3>Domestic Journals · KCI</h3>
+    <article class="publication"><span>2024</span><div><h4><a href="https://www.kjas.or.kr/journal/view.html?uid=120&&vmd=Full" target="_blank" rel="noopener">Real-Time Private Consumption Prediction Using Big Data</a></h4><p>Shin, S.J. & <strong>Seo, B.</strong>* · <em>The Korean Journal of Applied Statistics</em>, 37(1), 13–38.</p></div></article>
+    <article class="publication"><span>2024</span><div><h4><a href="https://www.kjas.or.kr/journal/view.html?uid=128&page=&sort=&scale=10&all_k=&s_t=&s_a=beomseok&s_k=&s_v=&s_n=&spage=&pn=search&year=&vmd=Full" target="_blank" rel="noopener">Using Noise Filtering and Sufficient Dimension Reduction Method on Unstructured Economic Data</a></h4><p>Yoo, J.K., Park, Y. & <strong>Seo, B.</strong>* · <em>The Korean Journal of Applied Statistics</em>, 37(2), 119–138.</p></div></article>
+  </div>
+
+  <div class="pub-group">
+    <h3>Policy Papers</h3>
+    <article class="publication"><span>2024</span><div><h4><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10086601&searchCnd=1&searchKwd=&depth2=201156&depth3=200433&depth=200433&pageUnit=10&pageIndex=1&programType=newsData&menuNo=200433&oldMenuNo=200433" target="_blank" rel="noopener">빅데이터 기반 민간소비 패턴 분석과 전망</a></h4><p><strong>Seo, B.</strong> · BOK Issue Note, No. 2024-24.</p></div></article>
+    <article class="publication"><span>2023</span><div><h4><a href="https://www.bok.or.kr/portal/bbs/P0002456/view.do?nttId=10081181&searchCnd=1&searchKwd=&depth2=201156&depth3=200431&date=&sdate=&edate=&sort=1&pageUnit=10&depth=200431&pageIndex=2&programType=newsData&menuNo=201670&oldMenuNo=200431" target="_blank" rel="noopener">Point and Risk estImation using an enSemble of Models for Nowcasting: PRISM-Now</a></h4><p><strong>Seo, B.</strong>*, Lee, D. & Cho, H. · BOK Working Paper, No. 2023-27.</p></div></article>
+    <article class="publication"><span>2023</span><div><h4><a href="https://www.bok.or.kr/eng/bbs/B0000268/view.do?nttId=10077570&menuNo=400067&pageIndex=1" target="_blank" rel="noopener">Econometric Forecasting Using Ubiquitous News Text: Text-enhanced Factor Model</a></h4><p><strong>Seo, B.</strong> · BOK Working Paper, No. 2023-10.</p></div></article>
+    <article class="publication"><span>2023</span><div><h4><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10075584&menuNo=200433&pageIndex=1" target="_blank" rel="noopener">AI 알고리즘을 이용한 산업모니터링: 증권사 리포트 텍스트 분석</a></h4><p><strong>Seo, B.</strong> · BOK Issue Note, No. 2023-5. <a href="{{ '/assets/pdf/BOK_IN_2023-5.pdf' | relative_url }}" target="_blank">PDF</a></p></div></article>
+    <article class="publication"><span>2022</span><div><h4><a href="https://www.bok.or.kr/eng/bbs/B0000268/view.do?nttId=10072856&menuNo=400067&pageIndex=1" target="_blank" rel="noopener">빅데이터를 이용한 실시간 민간소비 추정</a></h4><p>Shin, S.J. & <strong>Seo, B.</strong> · BOK Working Paper, No. 2022-16. <a href="{{ '/assets/pdf/BOK_WP_2022-16.pdf' | relative_url }}" target="_blank">PDF</a></p></div></article>
+    <article class="publication"><span>2022</span><div><h4><a href="https://www.bok.or.kr/eng/bbs/B0000268/view.do?nttId=10072851&menuNo=400067&pageIndex=1" target="_blank" rel="noopener">Machine-Learning-Based News Sentiment Index (NSI) of Korea</a></h4><p><strong>Seo, B.</strong>*, Lee, Y. & Cho, H. · BOK Working Paper, No. 2022-15. <a href="{{ '/assets/pdf/BOK_WP_2022-15.pdf' | relative_url }}" target="_blank">PDF</a></p></div></article>
+    <article class="publication"><span>2022</span><div><h4><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10070554&menuNo=200433&pageIndex=1" target="_blank" rel="noopener">뉴스 텍스트를 이용한 경기 예측: 경제부문별 텍스트 지표의 작성과 활용</a></h4><p><strong>Seo, B.</strong> · BOK Issue Note, No. 2022-18. <a href="{{ '/assets/pdf/BOK_IN_2022-18.pdf' | relative_url }}" target="_blank">PDF</a></p></div></article>
+  </div>
+
+  <div class="pub-group">
+    <h3>In Progress</h3>
+    <article class="publication"><span>2026</span><div><h4>Measuring Monetary Policy Surprises Using Text Mining: The Case of Korea</h4><p>Lee, Y.J., Kim, S., <strong>Seo, B.</strong> & Park, K.Y. · Under revision.</p></div></article>
+    <article class="publication"><span>2026</span><div><h4>When Does Housing Policy Stabilize the Housing-Credit Cycle? Policy Endogeneity and Text-Based Evidence from Korea</h4><p><strong>Seo, B.</strong>, Yoo, J. & Noh, Y. · Submitted.</p></div></article>
+    <article class="publication"><span>2026</span><div><h4>Linearly Interpretable Neural Clustering via Local Splits</h4><p><strong>Seo, B.</strong> & Choi, H. · Work in progress.</p></div></article>
+  </div>
+</section>
+
+<section class="section" id="teaching">
+  <div class="section-label">Teaching</div>
+  <div class="teaching-grid">
+    <div><span class="teaching-icon"><i class="fa fa-bar-chart"></i></span><h3>Statistics & Engineering</h3><ul><li>텍스트마이닝과 자연어처리 [Text Mining & Natural Language Processing (UG in Stat at SMU)]</li><li>통계적 기계학습 [Statistical Machine Learning (UG in Stat at SMU)]</li><li>통계적방법 I [Statistical Methods I (MS in Stat at SMU)]</li><li>통계분석실습 [Practicum in Statistical Analysis (UG in Stat at SMU)]</li><li>확률론 및 확률과정 [Introduction to Probability and Stochastic Processes (UG in Engineering at PSU)]</li><li>기초통계학 [Elementary Statistics (UG in Stat at PSU)]</li></ul></div>
+    <div><span class="teaching-icon"><i class="fa fa-line-chart"></i></span><h3>Economics & Business</h3><ul><li>거시경제를 위한 빅데이터 분석 [Big Data Analytics in Macroeconomics (MA in Econ at SKKU)]</li><li>금융경제를 위한 머신러닝 [Machine Learning for Finance and Economics (MA in Stat at Korea Univ)]</li><li>데이터정보 특강 (정책대학원 대상 강의) [Topics in Data Information (MA in Grad School of Policy Studies at Korea Univ)]</li><li>경제분석 자동화를 위한 데이터마이닝 (금융업 재직자 강의) [Data Mining for Automated Econ Analysis (Working Prof in Fin & Econ)]</li><li>AI와 경제전망 (금융업 재직자 특강) [AI & Economic Forecasting (Working Professional in Finance & Econ)]</li></ul></div>
+  </div>
+</section>
+
+<section class="section media-section" id="media">
+  <div class="section-label">Media</div>
+  <div class="media-feature">
+    <div class="video-frame">
+      <video controls preload="metadata" playsinline>
+        <source src="{{ '/assets/media/sbs-morning-wide-2023.mp4' | relative_url }}#t=0.1" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-copy"><span>Broadcast · 2023.02.16</span><h3>SBS 모닝와이드 — 친절한 경제</h3><small><i class="fa fa-play-circle"></i> 5:24 video</small></div>
+  </div>
+
+  <div class="media-list">
+    <a href="https://news.kicpa.or.kr/news/articleView.html?idxno=2783" target="_blank" rel="noopener"><span>2026.03.30</span><strong>고위험군 선별 심사ㆍAI 활용…2026년 한공회 회계심사ㆍ감리업무 운영계획</strong><small>CPA뉴스</small></a>
+    <a href="https://www.newsis.com/view/NISX20250918_0003334839" target="_blank" rel="noopener"><span>2025.09.19</span><strong>한은·통계학회, 공동포럼 개최…“AI·빅데이터 기반 통계 모색”</strong><small>뉴시스</small></a>
+    <a href="https://www.ajunews.com/view/20240823150253878" target="_blank" rel="noopener"><span>2024.08.25</span><strong>한은 경제모형실, 빅데이터로 하반기 분석해보니 “소비 개선·물가 둔화”</strong><small>아주경제</small></a>
+    <a href="https://www.yna.co.kr/view/AKR20231219066900002?input=1195m" target="_blank" rel="noopener"><span>2023.12.19</span><strong>한국은행, 단기 경제 전망 모형 ‘프리즘Now’ 개발</strong><small>연합뉴스</small></a>
+    <a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4254789" target="_blank" rel="noopener"><span>2023.02.16</span><strong>AI 텍스트 분석, 숫자 넘어선 예측 가능</strong><small>연합인포맥스</small></a>
+    <a href="https://www.fetimes.co.kr/news/articleView.html?idxno=107428" target="_blank" rel="noopener"><span>2023.02.16</span><strong>챗 GPT 등 자연어 기술로 경제 분석 혁신 될 것</strong><small>금융경제신문</small></a>
+  </div>
+
+  <div class="magazine-row">
+    <a href="{{ '/assets/pdf/magazine-xai.pdf' | relative_url }}" target="_blank"><span>Magazine</span><strong>설명가능한 인공지능?</strong><small>한은소식 · 2021(9)</small></a>
+    <a href="{{ '/assets/pdf/magazine-textmining.pdf' | relative_url }}" target="_blank"><span>Magazine</span><strong>텍스트마이닝으로 분석한 한은소식</strong><small>한은소식 · 2020(5)</small></a>
+    <a href="{{ '/assets/pdf/magazine-learning.pdf' | relative_url }}" target="_blank"><span>Magazine</span><strong>머신러닝, 유학, 그리고 무언가를 배운다는 것</strong><small>한은소식 · 2020(3)</small></a>
+  </div>
+</section>
+
+<section class="section news-detail-section" id="news-detail">
+  <div class="section-label">News</div>
+  <div class="section-heading"><h2>Recent updates</h2></div>
+  <div class="news-grid">
+    {% for item in site.data.news %}
+    <article class="news-card"><div><span>{{ item.date }}</span><small>{{ item.tag }}</small></div><h3>{{ item.title }}</h3>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">More <i class="fa fa-arrow-right"></i></a>{% endif %}</article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" id="codes">
+  <div class="section-label">Codes & tools</div>
+  <div class="code-grid">
+    <article><i class="fa fa-cloud"></i><h3>Text Indices Hub</h3><p>Interactive web application for Theme Frequency in News Indices and text-based economic indicators.</p><a href="http://seo-beomseok.github.io/texthub-webapp" target="_blank" rel="noopener">Open app <i class="fa fa-arrow-right"></i></a></article>
+    <article><i class="fa fa-cube"></i><h3>tspoon</h3><p>Python package for time-series preprocessing, period conversion, normalization, visualization, and more.</p><code>pip install tspoon</code><a href="https://pypi.org/project/tspoon/" target="_blank" rel="noopener">PyPI <i class="fa fa-arrow-right"></i></a></article>
+    <article><i class="fa fa-github"></i><h3>MLM</h3><p>Interpretable non-linear regression/classification via Mixture of Linear Models co-supervised by deep neural networks.</p><a href="https://github.com/seo-beomseok/MLM" target="_blank" rel="noopener">GitHub <i class="fa fa-arrow-right"></i></a></article>
+    <article><i class="fa fa-code-fork"></i><h3>HDclustVS</h3><p>Block-wise variable selection for high-dimensional clustering via latent states of mixture models.</p><a href="https://github.com/seo-beomseok/HDclustVS" target="_blank" rel="noopener">GitHub <i class="fa fa-arrow-right"></i></a></article>
+    <article><i class="fa fa-random"></i><h3>OTclust</h3><p>R package for mean partition, uncertainty assessment, cluster validation, and visualization selection.</p><a href="https://cran.r-project.org/web/packages/OTclust/index.html" target="_blank" rel="noopener">CRAN <i class="fa fa-arrow-right"></i></a></article>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="contact-panel">
+    <div>
+      <div class="section-label">Contact</div>
+      <h2>Contact</h2>
+      <p>Department of Statistics<br>Sookmyung Women's University<br>Seoul, Republic of Korea</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:bsseo@sm.ac.kr"><i class="fa fa-envelope-o"></i><span><small>Email</small>bsseo@sm.ac.kr</span></a>
+      <a href="https://scholar.google.com/citations?user=wkQfJqoAAAAJ" target="_blank" rel="noopener"><i class="fa fa-graduation-cap"></i><span><small>Profile</small>Google Scholar</span></a>
+      <a href="https://github.com/seo-beomseok" target="_blank" rel="noopener"><i class="fa fa-github"></i><span><small>Code</small>GitHub</span></a>
+      <a href="https://www.linkedin.com/in/beomseok-seo" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i><span><small>Network</small>LinkedIn</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div>© {{ "now" | date: "%Y" }} Explainable Neural Computing Lab</div>
+  <div>Department of Statistics · Sookmyung Women's University</div>
+</footer>
