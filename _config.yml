@@ -1,9 +1,13 @@
 name: "Explainable Neural Computing Lab"
+
 title: "Explainable Neural Computing Lab | Sookmyung Women's University"
+
 description: "Explainable Neural Computing Lab at Sookmyung Women's University. Research in explainable neural computing, statistical learning, forecasting, time-series, and narrative text data."
+
 url: "https://seo-beomseok.github.io"
-baseurl: ""
-repository: "seo-beomseok/seo-beomseok.github.io"
+baseurl: "/lab-homepage"
+repository: "seo-beomseok/lab-homepage"
+
 timezone: Asia/Seoul
 
 markdown: kramdown
@@ -26,5 +30,3 @@ exclude:
   - node_modules
   - README.md
   - LICENSE
-  - preview.html
-  - preview_novideo.html
