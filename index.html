@@ -206,7 +206,7 @@ title: ""
         {% if item.images.size > 1 %}
         <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image"><i class="fa fa-chevron-left"></i></button>
         <button class="carousel-btn carousel-next" type="button" aria-label="Next image"><i class="fa fa-chevron-right"></i></button>
-        <div class="carousel-counter"><span class="current-slide">1</span>{{ item.images.size }}</div>
+        <div class="carousel-counter"><span class="current-slide">1</span> / {{ item.images.size }}</div>
         {% endif %}
       </div>
       {% endif %}
@@ -253,7 +253,7 @@ title: ""
   <div>Department of Statistics · Sookmyung Women's University</div>
 </footer>
 
-<script>
+<!-- <script>
 document.querySelectorAll('.news-carousel').forEach(function(carousel) {
   const slides = carousel.querySelectorAll('.news-slide');
   const prev = carousel.querySelector('.carousel-prev');
@@ -277,6 +277,41 @@ document.querySelectorAll('.news-carousel').forEach(function(carousel) {
 
   next.addEventListener('click', function() {
     showSlide(index + 1);
+  });
+});
+</script> -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.news-carousel').forEach(function (carousel) {
+    const slides = carousel.querySelectorAll('.news-slide');
+    const prev = carousel.querySelector('.carousel-prev');
+    const next = carousel.querySelector('.carousel-next');
+    const counter = carousel.querySelector('.current-slide');
+
+    if (slides.length <= 1 || !prev || !next) return;
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach(function (slide) {
+        slide.classList.remove('active');
+      });
+
+      currentIndex = (index + slides.length) % slides.length;
+      slides[currentIndex].classList.add('active');
+
+      if (counter) {
+        counter.textContent = currentIndex + 1;
+      }
+    }
+
+    prev.addEventListener('click', function () {
+      showSlide(currentIndex - 1);
+    });
+
+    next.addEventListener('click', function () {
+      showSlide(currentIndex + 1);
+    });
   });
 });
 </script>
