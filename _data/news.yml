@@ -1,3 +1,19 @@
+- date: "2026.06"
+  tag: "Lab Event"
+  title: "Stat Dept Seminar"
+  text: "Seminar by Researchers from Google, Amazon"
+  images:
+    - "/assets/img/260602_1.jpg"
+    - "/assets/img/260602_2.jpg"
+    - "/assets/img/260602_3.jpg"
+
+- date: "2026.05"
+  tag: "Lab Event"
+  title: "Excellent Faculty Award"
+  text: "Regarding Technology Transfer"
+  images:
+    - "/assets/img/260520.jpg"
+    
 - date: "2026"
   tag: "Publication"
   title: "PRISM-Now published in the Journal of Forecasting"
