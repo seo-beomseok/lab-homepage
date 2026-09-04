@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="JHV-EmTG9P7oI0IQ2cyYHSBfL5L7sK_ij4qnxNCca6I">
+  <meta name="naver-site-verification" content="91c9d4006f2708fbb7f2162de07bd1599807f357">
+  <meta name="robots" content="max-image-preview:large">
+  <title>{% if page.title and page.title != '' %}{{ page.title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ '/assets/img/profile.jpg' | absolute_url }}">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/fonts/font-awesome/css/font-awesome.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell" id="top">
+    {% include sidebar.html %}
+    <main class="content" id="main">
+      {{ content }}
+    </main>
+  </div>
+  <script>
+    (function () {
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const root = document.documentElement;
+      const saved = localStorage.getItem('seo-theme');
+      if (saved === 'dark') root.dataset.theme = 'dark';
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          const dark = root.dataset.theme === 'dark';
+          root.dataset.theme = dark ? 'light' : 'dark';
+          localStorage.setItem('seo-theme', dark ? 'light' : 'dark');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

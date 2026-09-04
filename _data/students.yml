@@ -1,0 +1,22 @@
+# Add students here. Every entry automatically appears in the Lab section.
+# Example:
+# - name: "Student Name"
+#   program: "M.S. in Statistics"
+#   period: "2026–present"
+#   interests: "Interpretable neural networks, time-series forecasting"
+#   image: "/assets/img/students/student-name.jpg"   # optional
+#   url: "https://..."                               # optional
+
+
+- name: "Seoyeon Lee"
+  program: "MS"
+
+- name: "Habin Choi"
+  program: "MS"
+
+- name: "Jiwon Kim"
+  program: "MS"
+
+- name: "Youkyeong Choo"
+  program: "UG Intern"  
+# []
