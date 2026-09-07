@@ -1,3 +1,10 @@
+- date: "2026.07"
+  tag: "Lab Event"
+  title: "Habin Won 3rd Place in the Poster Session at KSS"
+  text: "Korean Statistical Sociery Summer Conference"
+  images: 
+    - "/assets/img/260702.jpg"
+
 - date: "2026.06"
   tag: "Lab Event"
   title: "Stat Dept Seminar"
@@ -10,7 +17,7 @@
 - date: "2026.05"
   tag: "Lab Event"
   title: "Excellent Faculty Award"
-  text: "Regarding Technology Transfer"
+  text: "In Technology Transfer"
   images:
     - "/assets/img/260520.jpg"
     
