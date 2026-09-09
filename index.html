@@ -66,7 +66,7 @@ title: ""
     {% for student in site.data.students %}
     <article class="member-card">
       {% if student.image %}<img src="{{ student.image | relative_url }}" alt="{{ student.name }}">{% else %}<div class="member-placeholder"><i class="fa fa-user"></i></div>{% endif %}
-      <div><span>{{ student.program }}</span><h4>{% if student.url %}<a href="{{ student.url }}" target="_blank" rel="noopener">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}</h4><p>{{ student.period }}</p><small>{{ student.interests }}</small></div>
+      <div><span>{{ student.program }}</span><h4>{% if student.url %}<a href="{{ student.url }}" target="_blank" rel="noopener">{{ student.name }}</a>{% else %}{{ student.name }}{% endif %}</h4><p>{{ student.period }}</p><small>{{ student.thesis }}</small></div>
     </article>
     {% endfor %}
   </div>
