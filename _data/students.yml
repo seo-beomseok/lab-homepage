@@ -14,10 +14,12 @@
 - name: "Habin Choi"
   program: "MS"
   image: "/assets/img/251.jpeg"
+  thesis: "Explainable Neural Clustering via Local Split"
 
 - name: "Jiwon Kim"
   program: "MS"
   image: "/assets/img/242.jpeg"
+  thesis: "텍스트마이닝을 활용한 부동산 시장 예측 및 결정요인 분석"
 
 - name: "Youkyeong Choo"
   program: "UG Intern"  
