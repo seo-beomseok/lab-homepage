@@ -1,3 +1,10 @@
+- date: "2026.08"
+  tag: "Lab Event"
+  title: "Master Graduation Ceremony"
+  text: "Sookmyung Women's Univ. Graduation"
+  images: 
+    - "/assets/img/260821.jpg"
+    
 - date: "2026.07"
   tag: "Lab Event"
   title: "Habin Won an Honorable Mention in the Poster Session at KSS"
