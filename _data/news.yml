@@ -1,5 +1,16 @@
 - date: "2026.10"
-  tag: "Lab Event"
+  tag: "Lab Project"
+  title: "Launched Regime-based Tactical Asset Allocation(TAA) Dashboard"
+  text: "With Mirae Asset Management & Korea Housing Finance Corporation (HF)"
+  images: 
+    - "/assets/img/261019-1.jpeg"
+    - "/assets/img/261019-2.jpeg"
+    - "/assets/img/261019-3.jpeg"
+    - "/assets/img/261019-4.jpeg"
+    - "/assets/img/261019-5.jpeg"
+
+- date: "2026.10"
+  tag: "Conference"
   title: "ECONDAT 2026 (Bank of Japan) - Panel Discussion"
   text: "ECONDAT 2026 8th Conference on Nontraditional Data, ML and NLP in Macroeconomics"
   images: 
@@ -13,7 +24,7 @@
 #     - "/assets/img/260821.jpeg"
     
 - date: "2026.07"
-  tag: "Lab Event"
+  tag: "Conference"
   title: "Habin Won an Honorable Mention in the Poster Session at KSS"
   text: "Korean Statistical Sociery Summer Conference"
   images: 
