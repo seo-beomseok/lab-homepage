@@ -1,4 +1,9 @@
-
+- date: "2026.10"
+  tag: "Lab Event"
+  title: "ECONDAT (Bank of Japan) - Panel Discussion"
+  text: "ECONDAT 2026 8th Conference on Nontraditional Data, ML and NLP in Macroeconomics"
+  images: 
+    - "/assets/img/261005.jpg"
 
 
 # - date: "2026.08"
