@@ -39,6 +39,36 @@ title: ""
   </div>
 </section>
 
+<section class="section news-detail-section" id="news-detail">
+  <div class="section-label">News</div>
+  <div class="section-heading"><h2>Recent updates</h2></div>
+  <div class="news-grid">
+    {% for item in site.data.news %}
+    <article class="news-card">
+      <div class="news-meta"><span>{{ item.date }}</span><small>{{ item.tag }}</small></div><h3>{{ item.title }}</h3>
+      {% if item.images %}
+      <div class="news-carousel">
+        {% for image in item.images %}
+        <img src="{{ image | relative_url }}" alt="{{ item.title }}" class="news-slide {% if forloop.first %}active{% endif %}">
+        {% endfor %}
+        {% if item.images.size > 1 %}
+        <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image"><i class="fa fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" aria-label="Next image"><i class="fa fa-chevron-right"></i></button>
+        <div class="carousel-counter"><span class="current-slide">1</span> / {{ item.images.size }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% if item.text %}
+      <p>{{ item.text }}</p>
+      {% endif %}
+      {% if item.url %}
+      <a href="{{ item.url }}" target="_blank" rel="noopener"> More <i class="fa fa-arrow-right"></i></a>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>  
+</section>
+
 <section class="section research-section" id="research">
   <div class="section-label">Research</div>
   <div class="section-heading">
@@ -190,36 +220,6 @@ title: ""
     <a href="{{ '/assets/pdf/magazine-textmining.pdf' | relative_url }}" target="_blank"><span>Magazine</span><strong>텍스트마이닝으로 분석한 한은소식</strong><small>한은소식 · 2020(5)</small></a>
     <a href="{{ '/assets/pdf/magazine-learning.pdf' | relative_url }}" target="_blank"><span>Magazine</span><strong>머신러닝, 유학, 그리고 무언가를 배운다는 것</strong><small>한은소식 · 2020(3)</small></a>
   </div>
-</section>
-
-<section class="section news-detail-section" id="news-detail">
-  <div class="section-label">News</div>
-  <div class="section-heading"><h2>Recent updates</h2></div>
-  <div class="news-grid">
-    {% for item in site.data.news %}
-    <article class="news-card">
-      <div class="news-meta"><span>{{ item.date }}</span><small>{{ item.tag }}</small></div><h3>{{ item.title }}</h3>
-      {% if item.images %}
-      <div class="news-carousel">
-        {% for image in item.images %}
-        <img src="{{ image | relative_url }}" alt="{{ item.title }}" class="news-slide {% if forloop.first %}active{% endif %}">
-        {% endfor %}
-        {% if item.images.size > 1 %}
-        <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image"><i class="fa fa-chevron-left"></i></button>
-        <button class="carousel-btn carousel-next" type="button" aria-label="Next image"><i class="fa fa-chevron-right"></i></button>
-        <div class="carousel-counter"><span class="current-slide">1</span> / {{ item.images.size }}</div>
-        {% endif %}
-      </div>
-      {% endif %}
-      {% if item.text %}
-      <p>{{ item.text }}</p>
-      {% endif %}
-      {% if item.url %}
-      <a href="{{ item.url }}" target="_blank" rel="noopener"> More <i class="fa fa-arrow-right"></i></a>
-      {% endif %}
-    </article>
-    {% endfor %}
-  </div>  
 </section>
 
 <section class="section" id="codes">
